@@ -1,0 +1,20 @@
+h1{
+    text-transform: uppercase;
+}
+
+.play{
+    font-size: 18px;
+    padding: 10px 15px;
+    font-weight: bold;
+    background-color: #4caf4f;
+    border-radius: 15px;
+    color: white;
+}
+
+.play:hover {
+    background-color: #2c6d2e;
+}
+
+.play:active {
+    background-color: red;
+}
