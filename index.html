@@ -8,11 +8,55 @@
 </head>
 <body>
     <h1>Rock Paper Scissors Game</h1>
-    <p>Click one of the following to play the game :) </p>
+    <p>Click one of the following to play the game :)</p>
     <br>
-    <button class="play" onclick="document.querySelector('#choice').innerHTML='You chose 👊🏻 Rock'"> 👊🏻 Rock</button>
-    <button class="play" onclick="document.querySelector('#choice').innerHTML='You chose ✋🏻 Paper'"> ✋🏻 Paper</button>
-    <button class="play" onclick="document.querySelector('#choice').innerHTML='You chose ✌🏻 Scissors'"> ✌🏻 Scissors</button>
+    <button class="play" onclick="
+        let randomChoice = Math.floor(Math.random() * 3 + 1);
+        let computerChoiceText;
+        if (randomChoice===1) {
+            computerChoiceText=`👊🏻 Rock`;
+        } else if (randomChoice===2) {
+            computerChoiceText=`✋🏻 Paper`;
+        } else {
+            computerChoiceText=`✌🏻 Scissors`;
+        }
+    
+        document.querySelector('#choice').innerHTML=
+        `You chose 👊🏻 Rock <br> 
+        Computer chose ${computerChoiceText}.`;"> 👊🏻 Rock</button>
+    
+    
+    <button class="play" onclick="
+        let randomChoice = Math.floor(Math.random() * 3 + 1);
+        let computerChoiceText;
+        if (randomChoice === 1) {
+            computerChoiceText=`👊🏻 Rock`;
+        } else if (randomChoice===2) {
+            computerChoiceText=`✋🏻 Paper`;
+        } else {
+            computerChoiceText=`✌🏻 Scissors`;
+        }
+    
+        document.querySelector('#choice').innerHTML=
+        `You chose ✋🏻 Paper <br> 
+        Computer chose ${computerChoiceText}.`;">✋🏻 Paper</button>
+    
+    
+    <button class="play" onclick="
+        let randomChoice = Math.floor(Math.random() * 3 + 1);
+        let computerChoiceText;
+        if (randomChoice===1) {
+            computerChoiceText=`👊🏻 Rock`;
+        } else if (randomChoice===2) {
+            computerChoiceText=`✋🏻 Paper`;
+        } else {
+            computerChoiceText=`✌🏻 Scissors`;
+        }
+
+        document.querySelector('#choice').innerHTML=
+        `You chose ✌🏻 Scissors <br> 
+        Computer chose ${computerChoiceText}.`;">✌🏻 Scissors</button>
+    
     <h4 id="choice"></h4>
 </body>
 </html>
