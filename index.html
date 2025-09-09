@@ -9,15 +9,17 @@
 <body>
     <h1>Rock Paper Scissors Game</h1>
     <p>Click one of the following to play the game :)</p>
-    <div class="rules"><img src="https://static.vecteezy.com/system/resources/previews/000/833/573/non_2x/rock-paper-scissors-hand-game-rules-design-vector.jpg" alt=""></div>
-    <br>
-    <button class="play" onclick="rockClicked()"> 👊🏻 Rock</button>
+    <div id="main">
+        <div class="rules"><img src="https://static.vecteezy.com/system/resources/previews/000/833/573/non_2x/rock-paper-scissors-hand-game-rules-design-vector.jpg" alt=""></div>
+        <br>
+        <button class="play" onclick="rockClicked()"> 👊🏻 Rock</button>
     
-    <button class="play" onclick="paperClicked()">✋🏻 Paper</button>
+        <button class="play" onclick="paperClicked()">✋🏻 Paper</button>
     
-    <button class="play" onclick="scissorsClicked()">✌🏻 Scissors</button>
-    
-    <h4 id="choice"></h4>
+        <button class="play" onclick="scissorsClicked()">✌🏻 Scissors</button>
+        </div>
+        <h4 id="choice"></h4>
+
     <script src="game.js"></script>
 </body>
 </html>
