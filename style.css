@@ -18,6 +18,7 @@ h1{
 .play:active {
     background-color: red;
 }
+
 .rules{
     display: flex;
     transform: rotate(90deg);    
