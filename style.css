@@ -18,3 +18,11 @@ h1{
 .play:active {
     background-color: red;
 }
+.rules{
+    display: flex;
+    transform: rotate(90deg);    
+    float: left;
+    height: 250px;
+    width: 250px;
+    margin: 10px 20px;
+}
