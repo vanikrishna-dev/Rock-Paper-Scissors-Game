@@ -1,10 +1,11 @@
-let randomChoice;
 let computerChoiceText;
-function assignRandomChoice(){
-    randomChoice = Math.floor(Math.random() * 3 + 1);
+function getRandomChoice(){
+    let randomChoice = Math.floor(Math.random() * 3 + 1);
+    return randomChoice;
 }
 
 function computerChoice(){
+    let randomChoice = getRandomChoice();
     if (randomChoice===1) {
             computerChoiceText=`👊🏻 Rock`;
         } else if (randomChoice===2) {
@@ -15,9 +16,7 @@ function computerChoice(){
 }
 
 function rockClicked(){
-        assignRandomChoice();
         computerChoice()
-
         let result;
         if(computerChoiceText===`👊🏻 Rock`){
             result='Tie'; 
@@ -34,7 +33,6 @@ function rockClicked(){
 }
 
 function paperClicked(){
-        assignRandomChoice();
         computerChoice()
 
         let result;
@@ -52,8 +50,7 @@ function paperClicked(){
         And the result is: ${result}!`;
 }
 
-function scissorsClicked(){
-        assignRandomChoice();
+function scissorsClicked(){ 
         computerChoice()
 
         let result;
