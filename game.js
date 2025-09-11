@@ -29,8 +29,8 @@ function rockClicked(){
 
         document.querySelector('#choice').innerHTML=
         `You chose: 👊🏻 Rock <br> 
-        Computer chose: ${computerChoiceText}<br>
-        And the result is: ${result}!`;
+        Computer chose: ${computerChoiceText}<br><br>
+        Result: ${result}!`;
 }
 
 function paperClicked(){
@@ -47,8 +47,8 @@ function paperClicked(){
     
         document.querySelector('#choice').innerHTML=
         `You chose: ✋🏻 Paper <br> 
-        Computer chose: ${computerChoiceText} <br>
-        And the result is: ${result}!`;
+        Computer chose: ${computerChoiceText} <br><br>
+        Result: ${result}!`;
 }
 
 function scissorsClicked(){ 
@@ -65,6 +65,6 @@ function scissorsClicked(){
 
         document.querySelector('#choice').innerHTML=
         `You chose: ✌🏻 Scissors <br> 
-        Computer chose: ${computerChoiceText}<br>
-        And the result is: ${result}!`;
+        Computer chose: ${computerChoiceText}<br><br>
+        Result: ${result}!`;
 }
