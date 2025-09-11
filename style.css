@@ -1,5 +1,6 @@
 body{
     background-color: rgb(88 49 174);
+    border: 3px dotted whitesmoke;
 }
 
 h1{
@@ -49,6 +50,9 @@ p{
     margin: auto;
     border-radius: 100px;
     color: whitesmoke;
+    text-align: center;
+    font-size: larger;
+    border: 2px dotted whitesmoke;
 }
 
 .rules{
