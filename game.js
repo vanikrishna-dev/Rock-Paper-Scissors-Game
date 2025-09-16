@@ -1,3 +1,9 @@
+let score = {
+    computer: 0,
+    user: 0,
+    tie: 0,
+}; 
+
 function getRandomChoice(){
     let randomChoice = Math.floor(Math.random() * 3 + 1);
     return randomChoice;
@@ -17,6 +23,10 @@ function computerChoice(){
 }
 
 function showResult(userChoice, computerChoice, result){
+    document.querySelector("#score").innerHTML = 
+    `Score ---> Computer Won: ${score.computer}, 
+    User Won: ${score.user},
+    Tie: ${score.tie}`;
 
     document.querySelector('#choice').innerHTML=
     `You chose: ${userChoice} <br> 
@@ -28,12 +38,15 @@ function getResult(userChoice, computerChoiceText ){
     let result = 'Unknown';
     if(computerChoiceText===userChoice){
         result='Tie'; 
+        score.tie++;
     } else if((computerChoiceText===`✋🏻 Paper` && userChoice === '👊🏻 Rock') ||
               (computerChoiceText==='👊🏻 Rock' && userChoice === '✌🏻 Scissors')||
               (computerChoiceText==='✌🏻 Scissors' && userChoice === `✋🏻 Paper`) ){
         result='Computer Won'; 
+        score.computer++;
     }else{
         result='You Won';
+        score.user++;
     }
     return result;
 }
