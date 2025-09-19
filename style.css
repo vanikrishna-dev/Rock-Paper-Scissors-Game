@@ -18,6 +18,7 @@ p{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .play{
@@ -39,6 +40,12 @@ p{
 
 .play:active {
     background-color: red;
+}
+
+.resetButton{
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .reset{
@@ -92,6 +99,6 @@ p{
     float: left;
     height: 250px;
     width: 250px;
-    margin: 10px 20px;
+    /* margin: 10px 20px; */
     border: 1px solid whitesmoke;
 }

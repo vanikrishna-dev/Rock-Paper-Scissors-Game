@@ -12,16 +12,21 @@
     <p>Click one of the following to play the game :)</p>
     <div id="main">
         <div class="rules"><img src="https://static.vecteezy.com/system/resources/previews/000/833/573/non_2x/rock-paper-scissors-hand-game-rules-design-vector.jpg" alt=""></div>
+        <div id="playDiv">
         <br>
         <button class="play" onclick="rockClicked()"> 👊🏻 Rock</button>
     
         <button class="play" onclick="paperClicked()">✋🏻 Paper</button>
     
         <button class="play" onclick="scissorsClicked()">✌🏻 Scissors</button>
-        <button class="reset" onclick="resetScore( )"> RESET</button>
         </div>
+    </div>
     <br>
     <h4 id="choice"></h4>
+    <br>
+    <div class="resetButton">
+    <button class="reset" onclick="resetScore( )"> RESET</button>
+    </div>
     <br>
     <script src="game.js"></script>
 </body>
