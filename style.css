@@ -46,21 +46,22 @@ p{
     padding: 10px 15px;
     margin: 10px;
     font-weight: bold;
-    background-color: rgb(30, 28, 35);
+    background-color: rgba(245, 245, 245, 0.688);
     border-radius: 15px;
-    color: white;
+    color: #441b9f;
     transition: all 0.2s ease-in-out;
+    border: 1px dotted whitesmoke;
 }
 
 .reset:hover {
-    background-color: black;
+    background-color: rgba(245, 245, 245, 0.86);
     cursor: pointer;
     transform: scale(1.05);
 }
 
 .reset:active {
     background-color: whitesmoke;
-    color: black;
+    color: #441b9f;
 }
 
 #choice{
