@@ -41,6 +41,28 @@ p{
     background-color: red;
 }
 
+.reset{
+    font-size: 18px;
+    padding: 10px 15px;
+    margin: 10px;
+    font-weight: bold;
+    background-color: rgb(30, 28, 35);
+    border-radius: 15px;
+    color: white;
+    transition: all 0.2s ease-in-out;
+}
+
+.reset:hover {
+    background-color: black;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.reset:active {
+    background-color: whitesmoke;
+    color: black;
+}
+
 #choice{
     display: flex;
     justify-content: center;

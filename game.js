@@ -16,6 +16,14 @@ let score = {
     }
 }; 
 
+function resetScore(){
+    console.log('Resetting Score');
+    score.computer = 0;
+    score.user = 0;
+    score.tie = 0 ;
+    score.updateScore(); 
+}
+
 function init(){
     let scoreStr = localStorage.getItem(`score`);
     if(scoreStr){
