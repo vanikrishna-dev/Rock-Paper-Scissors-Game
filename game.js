@@ -12,7 +12,7 @@ let score = {
     saveScore: function(){
         let scoreStr = JSON.stringify(this);
         localStorage.setItem(`score`, scoreStr);
-        console.log("Score saved: ${scoreStr}");
+        console.log(`Score saved: ${scoreStr}`);
     }
 }; 
 
@@ -22,8 +22,9 @@ function resetScore(){
     score.user = 0;
     score.tie = 0 ;
     score.updateScore(); 
-    document.querySelector('#choice').innerHTML=`The game was reset <br>
-    Click to play again:)`;
+    // document.querySelector('#choice').innerHTML=`The game was reset <br>
+    // Click to play again:)`;
+    document.querySelector('#choice').style.display = 'none';
 }
 
 function init(){
@@ -57,6 +58,8 @@ function computerChoice(){
 }
 
 function showResult(userChoice, computerChoice, result){
+    document.querySelector('#choice').style.display = 'flex';
+
     document.querySelector('#choice').innerHTML=
     `You chose: ${userChoice} <br> 
     Computer chose: ${computerChoice}<br><br>
