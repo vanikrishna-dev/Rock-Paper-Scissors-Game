@@ -84,13 +84,13 @@ p{
     text-align: center;
     font-size: larger;
     border: 2px dotted whitesmoke;
-    background-color: #242424;
+    background-color: #242424af;
 }
 
 #score{
     text-align: center;
     color: whitesmoke;
-    background-color: #242424;
+    background-color: #242424af;
     padding: 10px;
     border: 1px dotted whitesmoke;
 }

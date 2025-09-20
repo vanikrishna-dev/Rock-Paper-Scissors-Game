@@ -22,7 +22,8 @@ function resetScore(){
     score.user = 0;
     score.tie = 0 ;
     score.updateScore(); 
-    document.querySelector('#choice').innerHTML="The game was reset";
+    document.querySelector('#choice').innerHTML=`The game was reset <br>
+    Click to play again:)`;
 }
 
 function init(){
