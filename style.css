@@ -12,6 +12,7 @@ h1{
 p{
     text-align: center;
     color: whitesmoke;
+    padding: 12px;
 }
 
 #main{
@@ -88,6 +89,8 @@ p{
 }
 
 #score{
+    display: none;
+    justify-content: center;
     text-align: center;
     color: whitesmoke;
     background-color: #242424af;
